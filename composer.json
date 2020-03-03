@@ -1,0 +1,16 @@
+{
+    "name": "poabob/swoole",
+    "description": "swoole timer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "poabob",
+            "email": "zxc752166@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { 
+            "Poabob\\Swoole\\": "src/App" 
+        }
+    }
+}
