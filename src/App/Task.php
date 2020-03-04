@@ -12,11 +12,11 @@ class Task
     protected $serv;
     protected $host = '127.0.0.1';
     protected $port = 9502;
-    // 进程名称
+    // 進程id
     protected $taskName = 'swooleTask';
-    // PID路径
+    // PID path
     protected $pidPath = '/opt/lampp/htdocs/swoole-app/swooletask.pid';
-    // 设置运行时参数
+    // 設置運行參數
     protected $options = [
         'worker_num' => 4, 
         'daemonize' => true, 
@@ -59,7 +59,7 @@ class Task
         echo 'Swoole Timer 已經啟動...'.PHP_EOL;
     }
 
-    //监听连接进入事件
+    // 監聽
     public function onOpen(swoole_websocket_server $serv, $request)
     {
         echo "Swoole 已和{$request->fd}建立連接".PHP_EOL;
